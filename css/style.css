@@ -1,0 +1,75 @@
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.top-header{
+  padding: 2rem 0;
+  background: rgba(221, 51, 51, 0.9);
+}
+
+.header-container{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .link:link,
+.header .link:visited{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.fa-phone-square{
+  color: #fff; 
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.header .link:hover{
+  border-bottom: 1px dashed #fff;
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bottom-header{
+  padding: 2rem 0;
+}
+
+.logo{
+  height: 5rem;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child){
+  margin-right: 1rem;
+}
+
+.nav-link:link,
+.nav-link:visited{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
