@@ -73,3 +73,34 @@ body{
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+.representation{
+  width: 100%;
+  height: 90vh;
+}
+
+.img-box{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.representation-img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  animation: deletion 3s linear forwards;
+}
+
+@keyframes deletion {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
