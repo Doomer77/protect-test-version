@@ -135,6 +135,24 @@ body{
   color: rgba(255, 255, 255, 1);
 }
 
+.information{
+  position: relative;
+}
+
+.information-container{
+  width: 1140px;
+  height: 80vh;
+  padding: 10rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information-img{
+  height: 30rem;
+}
+
 
 
 
