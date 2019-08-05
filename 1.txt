@@ -1,0 +1,203 @@
+<header class="header">
+    <div class="header-bcg">
+      <img src="img/server-bcg.jpg" alt="" class="header-img">
+    </div>
+    <div class="header-top-block">
+      <div class="header-top-block-container">
+        <div class="header-logo-box">
+          <a href="#" class="logo-link"><img src="img/LogoProtect_2.png" alt="" class="logo-img"></a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+              <li class="header-nav-item"><a href="#" class="header-nav-link active">Главная</a></li>
+              <li class="header-nav-item"><a href="#" class="header-nav-link">Оборудование</a></li>
+              <li class="header-nav-item"><a href="#" class="header-nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-top-block-contact">
+          <div class="header-top-block-phone">
+              <a href="tel:+74951375245" class="link">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <span>+7 495 137 52 45</span>
+              </a>
+            </div>
+            <div class="header-top-block-mail">
+              <a href="mailto:info@upsprotect.ru" class="link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>info@upsprotect.ru</span>
+              </a>
+            </div>
+            <div class="header-top-block-search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>   
+      </div>
+    </div>
+    <div class="information">
+      <div class="information-container">
+        <div class="information-img-box">
+          <img src="img/PowerNet-6-10-kVA-1-e1518294399406.png" alt="" class="information-img">
+        </div>
+        <div class="information-header-box">
+          <h1 class="information-header">Protect PowerNet 19"</h1>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header-bcg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.header-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  animation: deletion 3s linear forwards;
+}
+
+@keyframes deletion {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.05);
+  }
+}
+
+.logo-img {
+  display: block;
+  height: 5.5rem;
+}
+
+.header-top-block{
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.header-top-block-container{
+  width: 1140px;
+  padding: 2rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list{
+  list-style: none;
+  display: flex;
+}
+
+.header-nav-item:not(:last-child){
+  margin-right: 1.5rem;
+}
+
+.header-nav-link:link,
+.header-nav-link:visited{
+  text-decoration: none;
+  color: rgb(227, 30, 36);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.header-nav-link:hover{
+  border-bottom: 1px dashed #fff;
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.header-top-block-contact{
+  display: flex;
+  align-items: center;
+}
+
+.header-top-block-phone{
+  margin-right: 1.5rem;
+}
+
+.header-top-block-mail{
+  margin-right: 1.5rem;
+}
+
+.fa{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.fa-search:hover{
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.link{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.link:hover{
+  border-bottom: 1px dashed #fff;
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 1);
+}
+
+.link:hover .fa{
+  transition: all 0.5s;
+  color: rgba(255, 255, 255, 1);
+}
+
+.information{
+  position: relative;
+}
+
+.information-container{
+  width: 1140px;
+  height: 80vh;
+  padding: 10rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.information-img{
+  height: 30rem;
+}
+
