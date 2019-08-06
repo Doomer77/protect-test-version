@@ -16,7 +16,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Open Sans", Arial, sans-serif; }
+  font-family: "Play", sans-serif; }
 
 .header {
   width: 100%;
@@ -43,7 +43,7 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.7); }
   .header__container {
-    width: 1140px;
+    width: 80%;
     padding: 2rem 0;
     margin: 0 auto;
     display: flex;
@@ -66,8 +66,24 @@ body {
     font-weight: 400;
     transition: all 0.3s; }
     .header__nav-link:link:hover, .header__nav-link:visited:hover {
-      color: white;
-      transform: translateY(-0.5rem); }
+      color: white; }
+  .header__nav-link--js {
+    display: flex;
+    margin-right: 1.5rem;
+    position: relative; }
+    .header__nav-link--js:hover {
+      color: white; }
+  .header__icon-link {
+    top: -4px;
+    right: -20px;
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #e31e24;
+    transform: rotate(180deg); }
+  .header__nav-link--js:hover .header__icon-link {
+    fill: white;
+    transition: 0.2s; }
   .header__contact {
     display: flex; }
   .header__contact-link:link, .header__contact-link:visited {
@@ -82,13 +98,13 @@ body {
     .header__contact-link:link:not(:last-child), .header__contact-link:visited:not(:last-child) {
       margin-right: 1.5rem; }
     .header__contact-link:link:hover, .header__contact-link:visited:hover {
-      color: white;
-      transform: translateY(-0.5rem); }
+      color: white; }
   .header__contact-icon {
     height: 2.25rem;
     width: 2.25rem;
-    fill: rgba(0, 0, 0, 0.6);
-    margin-right: 0.5rem; }
+    fill: rgba(0, 0, 0, 0.6); }
+    .header__contact-icon:not(:last-child) {
+      margin-right: 0.5rem; }
   .header__contact-link:hover .header__contact-icon {
     fill: white;
     transition: 0.2s; }

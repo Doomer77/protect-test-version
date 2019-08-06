@@ -26,7 +26,7 @@
     background: $color-bcg;
   }
   &__container{ 
-    width: 1140px;
+    width: 80%;
     padding: 2rem 0;
     margin: 0 auto;
     display: flex;
@@ -44,7 +44,6 @@
   &__nav-item:not(:last-child){
     margin-right: 1.5rem;
   }
-   
   &__nav-link:link,
   &__nav-link:visited{
     display: block;
@@ -56,8 +55,28 @@
     transition: all 0.3s;
     &:hover{
       color:$color-hover-link; 
-      transform: translateY(-0.5rem);  
-    }  
+    }
+  }
+  &__nav-link--js{ 
+    display: flex; 
+    margin-right: 1.5rem; 
+    position: relative; 
+    &:hover{
+      color: $color-hover-link;   
+    } 
+  }
+  &__icon-link{
+    top: -4px;
+    right: -20px;
+    position: absolute;
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: $color-red; 
+    transform: rotate(180deg);   
+  }
+  &__nav-link--js:hover &__icon-link{
+    fill: $color-hover-link;
+    transition: 0.2s;
   }
   &__contact{
     display: flex;
@@ -67,7 +86,7 @@
     display: flex; 
     align-items: center;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
+    color: $color-contact-link;
     font-family: $font-primary;
     font-size: 1.8rem;   
     font-weight: 400; 
@@ -76,18 +95,19 @@
       margin-right: 1.5rem;
     }
     &:hover{
-      color: $color-hover-link;  
-      transform: translateY(-0.5rem);  
+      color: $color-hover-link;      
     }
   }
   &__contact-icon{
     height: 2.25rem;
     width: 2.25rem;
-    fill: rgba(0, 0, 0, 0.6); 
-    margin-right: 0.5rem;   
+    fill: $color-contact-link; 
+    &:not(:last-child){
+      margin-right: 0.5rem; 
+    }   
   }
   &__contact-link:hover &__contact-icon{
-    fill: rgba(255, 255, 255, 1);
+    fill: $color-hover-link;
     transition: 0.2s; 
   }
 }
