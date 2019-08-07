@@ -7,10 +7,17 @@
   text-align: center; 
 } 
 .heading-secondary{
-  font-size: 3.5rem;    
+  font-size: 4rem;    
   color: $color-red-2;
   letter-spacing: 0.5rem; 
   text-shadow: 0.2rem 0.2rem 0.4rem $black; 
-  margin-bottom: 4rem;
-  text-align: center;  
+  margin-bottom: 1.5rem;
+  text-align: center;       
+}
+.heading-tertiary{
+  font-size: 2rem;  
+  color: $white; 
+  letter-spacing: 0.2rem;  
+  margin-bottom: 3rem;
+  text-align: center; 
 }
