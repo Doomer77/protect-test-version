@@ -1,15 +1,15 @@
 .header{
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: relative; 
+  overflow: hidden;
   &__bcg{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: $color-bcg;
     position: absolute;
-    overflow: hidden;
     top: 0;
-    left: 0;
+    left: 0;  
   }
   &__img{
     width: 100%;
@@ -19,15 +19,57 @@
     left: 0;
     z-index: -2;
     animation: deletion 3s linear forwards;    
-  }    
-  &__top{
-    position: relative;
+  }  
+  &__information{
     width: 100%;
-    background: $color-bcg;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    
+  }
+  &__left{    
+    position: absolute; 
+    left: 0;
+    width: 50%;     
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    height: 100vh;  
+    transform: translateX(-100%); 
+    background-color: $color-bcg-2; 
+    animation: moveInLeft 0.8s linear forwards;      
+  } 
+  &__presentation-img{
+    opacity: 0;
+    animation: outInOpacity 0.5s 1.2s linear forwards;     
+  }
+  &__right{
+    position: absolute; 
+    right: 0;  
+    width: 50%;       
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    background-color: $color-bcg-3;
+    animation: moveInRight 0.8s linear forwards; 
+  }
+  &__heading-box{
+    width: 100%; 
+    text-align: center; 
+    opacity: 0;  
+    animation: outInOpacity 0.5s 1.2s linear forwards;
+  }
+  &__top{
+    position: absolute; 
+    width: 100%; 
+    top: 0;
+    z-index: 2;  
   }
   &__container{ 
     width: 80%;
-    padding: 2rem 0;
+    padding: 1rem 0;   
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -35,7 +77,7 @@
   }
   &__logo{
     display: block;
-    height: 5.5rem; 
+    height: 5rem;  
   }
   &__nav-list{
     list-style: none;
@@ -48,13 +90,13 @@
   &__nav-link:visited{
     display: block;
     text-decoration: none;
-    color: $color-red;
+    color: $white; 
     font-family: $font-primary;
     font-size: 1.8rem;
     font-weight: 400;
     transition: all 0.3s;
     &:hover{
-      color:$color-hover-link; 
+      color:$color-red;  
     }
   }
   &__nav-link--js{ 
@@ -95,7 +137,7 @@
       margin-right: 1.5rem;
     }
     &:hover{
-      color: $color-hover-link;      
+      color: $color-red;       
     }
   }
   &__contact-icon{
@@ -107,7 +149,7 @@
     }   
   }
   &__contact-link:hover &__contact-icon{
-    fill: $color-hover-link;
-    transition: 0.2s; 
+    fill: $color-red;
+    transition: 0.2s;  
   }
 }
