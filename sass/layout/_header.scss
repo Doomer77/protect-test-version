@@ -84,16 +84,16 @@
     display: flex;  
   }
   &__nav-item:not(:last-child){
-    margin-right: 1.5rem;
+    margin-right: 2rem; 
   }
   &__nav-link:link,
   &__nav-link:visited{
     display: block;
     text-decoration: none;
     color: $white; 
-    font-family: $font-primary;
+    font-family: $font-secondary; 
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300; 
     transition: all 0.3s;
     &:hover{
       color:$color-red;  
@@ -108,8 +108,8 @@
     } 
   }
   &__icon-link{
-    top: -4px;
-    right: -20px;
+    top: -3px; 
+    right: -23px; 
     position: absolute;
     height: 2.25rem;
     width: 2.25rem;
@@ -129,9 +129,9 @@
     align-items: center;
     text-decoration: none;
     color: $color-contact-link;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 1.8rem;   
-    font-weight: 400; 
+    font-weight: 300; 
     transition: 0.3s;
     &:not(:last-child){
       margin-right: 1.5rem;
