@@ -1,10 +1,8 @@
 $(document).ready(function(){
-  $('.slider').slick({
-    autoplay: true,
-    fade: true, 
-    autoplaySpeed: 3000,
-    speed: 2000,
-    pauseOnHover: false,
-    dots: true 
-  }); 
+  $('.slider').bxSlider({
+    mode: 'fade',
+    auto: true,
+    speed: 1000,
+    pause: 5000
+  });
 });
