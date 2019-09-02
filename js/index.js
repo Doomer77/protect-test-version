@@ -2,7 +2,8 @@ $(document).ready(function(){
   $('.slider').bxSlider({
     mode: 'fade',
     auto: true,
-    speed: 1000,
-    pause: 5000
+    autoStart: true,
+    pause: 4500,
+    autoHover: true
   });
 });

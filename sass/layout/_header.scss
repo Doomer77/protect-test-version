@@ -22,7 +22,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    animation: deletion 3s linear forwards;      
+    animation: approximation 4.6s linear forwards;        
   }
   &__information{
     width: 100%;
@@ -96,8 +96,8 @@
     text-decoration: none;
     color: $white; 
     font-family: $font-secondary; 
-    font-size: 1.8rem;
-    font-weight: 300; 
+    font-size: 1.9rem;
+    font-weight: 400; 
     transition: all 0.3s;
     &:hover{
       color:$color-red;  
@@ -112,7 +112,7 @@
     } 
   }
   &__icon-link{
-    top: -3px; 
+    top: 0; 
     right: -23px; 
     position: absolute;
     height: 2.25rem;

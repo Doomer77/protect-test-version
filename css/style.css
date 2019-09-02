@@ -1,4 +1,4 @@
-@keyframes deletion {
+@keyframes approximation {
   0% {
     transform: scale(1); }
   100% {
@@ -106,7 +106,7 @@ body {
     top: 0;
     left: 0;
     z-index: -2;
-    animation: deletion 3s linear forwards; }
+    animation: approximation 4.6s linear forwards; }
   .header__information {
     width: 100%;
     margin: 0 auto;
@@ -168,8 +168,8 @@ body {
     text-decoration: none;
     color: #fff;
     font-family: "Oswald", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.9rem;
+    font-weight: 400;
     transition: all 0.3s; }
     .header__nav-link:link:hover, .header__nav-link:visited:hover {
       color: #e31e24; }
@@ -180,7 +180,7 @@ body {
     .header__nav-link--js:hover {
       color: white; }
   .header__icon-link {
-    top: -3px;
+    top: 0;
     right: -23px;
     position: absolute;
     height: 2.25rem;
