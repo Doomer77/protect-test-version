@@ -22,7 +22,7 @@
     top: 0;
     left: 0;
     z-index: -2;
-    animation: approximation 4.6s linear forwards;        
+    animation: approximation 4.6s linear forwards;          
   }
   &__information{
     width: 100%;
@@ -40,7 +40,7 @@
     height: 100vh;  
     transform: translateX(-100%); 
     background-color: $color-bcg-2; 
-    animation: moveInLeft 0.8s linear forwards;      
+    animation: moveInLeft 0.8s linear forwards;        
   } 
   &__presentation-img{
     opacity: 0;
